@@ -36,11 +36,9 @@ case $x in
     ;;
 4 | 04)
     {
-    rm -f /usr/bin/proxy
-    curl -s -L -o /usr/bin/main https://github.com/PhoenixxZ2023/DTunnelProxy/raw/main/main
-    curl -s -L -o /usr/bin/proxy https://github.com/PhoenixxZ2023/DTunnelProxy/raw/main/proxy
-    chmod +x /usr/bin/main /usr/bin/proxy
-    clear && echo -e "\033[1;31mExecute: \033[1;32mmain033[0m" && main
+    curl -s -o install.sh -L https://raw.githubusercontent.com/PhoenixxZ2023/proxy/main/install.sh
+    chmod +x install.sh
+     ./install.sh && mainproxy
     echo ""
     echo "VELOCIDADE SUPREMA ATIVADA"
     }

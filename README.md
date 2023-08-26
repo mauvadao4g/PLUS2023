@@ -37,35 +37,9 @@
 
 # SSH PLUS 2023 INSTALAÇÃO
 
-# Como Instalar!
+# ATUALIZAR SISTEMA E INSTLAR SCRIPT SSH-PLUS 2023!
 
 # OPÇÃO 1
 ````
 apt update -y && apt upgrade -y && wget -y; bash <(wget -qO- raw.githubusercontent.com/PhoenixxZ2023/PLUS/main/ssh-plus)
-````
-
-# OPÇÃO 2
-```
-apt update -y && apt upgrade -y && wget -y; bash <(wget -qO- raw.githubusercontent.com/PhoenixxZ2023/PLUS/main/script/arm64/Plus/ssh-plus)
-
-```
-
-# Instalar Direto e Máquinas 64!
-
-````
-apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/PhoenixxZ2023/PLUS/main/ARM/Plus && chmod 777 Plus && ./Plus
-````
-
-
-# BOT ZAP 😝 ![icons8-whatsapp-48](https://user-images.githubusercontent.com/101994539/224822427-60c31ec9-ad6e-4e94-90f6-34f65aedb080.png)
-
-
-```
-wget https://www.dropbox.com/s/wpi8v0i5slfm0uf/TBotPlus_Cliente_2008_v1.0.9.zip; unzip TBotPlus_Cliente_*.zip && cd TBotPlus; chmod +x TerminusBot.sh && ./TerminusBot.sh && wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash && source ~/.profile && nvm install 16 && terminus
-````
-
-# PARA TER ACESSO AS OPÇÕES  OU MENU DO BOT E SO DIGITAR:
-
-````
-terminus
 ````

@@ -46,7 +46,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/senharoot/main/
 
 # SSH-PLUS 2023 INSTALAÇÃO
 
-# ATUALIZAR SISTEMA E INSTLAR SCRIPT SSH-PLUS 2023!
+# ATUALIZAR SISTEMA E INSTALAR SCRIPT SSH-PLUS 2023!
 
 ````
 apt update -y && apt upgrade -y && wget -y; bash <(wget -qO- raw.githubusercontent.com/PhoenixxZ2023/PLUS/main/ssh-plus)

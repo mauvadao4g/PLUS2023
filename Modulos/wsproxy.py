@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-# WEBSOCKET @turbonet2023
+# WEBSOCKET @TURBONET2023
 import socket, threading, thread, select, signal, sys, time, getopt
 MSG = '<span style="color:#c33bd2">@</span><span style="color:#8c72d5">s</span><span style="color:#55aad9">c</span><span style="color:#1de1dc">o</span><span style="color:#00ffdf">t</span><span style="color:#29c4e5">t</span><span style="color:#508cec">s</span><span style="color:#7754f4">s</span><span style="color:#9e1cfb">h</span>'
 COR = '<font color="null">'

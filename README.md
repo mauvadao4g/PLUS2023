@@ -44,7 +44,7 @@ sudo -i
 bash <(wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/senharoot/main/senharoot.sh)
 ````
 
-# SSH PLUS 2023 INSTALAÇÃO
+# SSH-PLUS 2023 INSTALAÇÃO
 
 # ATUALIZAR SISTEMA E INSTLAR SCRIPT SSH-PLUS 2023!
 

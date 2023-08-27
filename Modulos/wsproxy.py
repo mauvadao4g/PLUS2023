@@ -18,7 +18,7 @@ except:
 BUFLEN = 8196 * 8
 TIMEOUT = 60
 DEFAULT_HOST = "127.0.0.1:22"
-RESPONSE = "HTTP/1.1 200 " + str(COR) + str(MSG) + str(FTAG) + " - (" + str(COx) + str(MSx) + str(FTAx) + "\r\n\r\n"
+RESPONSE = 'HTTP/1.1 101 '+str(COR)+str(MSG)+str(FTAG)+' \r\n\r\n'
  
 class Server(threading.Thread):
     def __init__(self, host, port):

@@ -35,11 +35,21 @@
 * Recomenda-se usar uma distro nova ou formatada
 * O idioma padrão é o Português
 
+# Entrar e definir como Usuário root usar comando abaixo:
+sudo -i
+
+# ALTERAR SENHA ROOT VPS...
+
+````
+bash <(wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/senharoot/main/senharoot.sh)
+````
+
 # SSH PLUS 2023 INSTALAÇÃO
 
 # ATUALIZAR SISTEMA E INSTLAR SCRIPT SSH-PLUS 2023!
 
 # OPÇÃO 1
+
 ````
 apt update -y && apt upgrade -y && wget -y; bash <(wget -qO- raw.githubusercontent.com/PhoenixxZ2023/PLUS/main/ssh-plus)
 ````

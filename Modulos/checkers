@@ -12,10 +12,9 @@ clear
 echo -e "\033[46;1;37m              ★ MENU CHECKUSER ★               \033[0m"
 echo -e "\033[01;31m\033[0m"
 echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 01 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER CONECTA4G \033[0m"
-echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 02 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER DTUNNEL VPN\033[0m"
-echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 03 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER GLTUNNEL MOD VPN\033[0m"
-echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 04 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR TURBONET PROXY MOD\033[0m"
-echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 05 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER ANYVPN MOD\033[0m"
+echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 02 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER GLTUNNEL VPN MOD\033[0m"
+echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 03 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR TURBONET PROXY MOD\033[0m"
+echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 04 •\033[1;34m]\033[1;37m ➤  \033[1;33mINSTALAR CHECKUSER ANYVPN MOD\033[0m"
 echo -e "\033[01;31m\033[1;31m\033[1;34m[\033[1;37m 00 •\033[1;34m]\033[1;37m ➤  \033[1;33mVOLTAR  \033[1;32m<\033[1;33m<\033[1;31m< \033[0m"
 echo -e "\033[01;31m\033[0m"
 echo -e "\033[0;36m░★░░★░░★░░★░░★░░★░░★░░★░░★░░★░░★░░★░░★░░★░░★░\033[0m"
@@ -32,9 +31,6 @@ case $x in
     bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/DTCheckUser/master/install.sh)
     ;;
 3 | 03)
-    bash <(curl -sL https://raw.githubusercontent.com/ScottBrabo/CheckUser/master/install.sh)
-    ;;
-4 | 04)
     {
     bash <(curl -s -o install.sh -L https://raw.githubusercontent.com/PhoenixxZ2023/proxy/main/install.sh
     chmod +x install.sh
@@ -43,7 +39,7 @@ case $x in
     echo "VELOCIDADE SUPREMA ATIVADA"
     }
     ;;
-5 | 05)
+4 | 04)
     if check_installed; then
         chany  # Já instalado, executar o sistema chany
     else

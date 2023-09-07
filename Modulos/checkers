@@ -32,7 +32,7 @@ case $x in
     bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/DTCheckUser/master/install.sh)
     ;;
 3 | 03)
-     bash <(curl -sL https://raw.githubusercontent.com/ScottBrabo/CheckUser/master/install.sh)
+    bash <(curl -sL https://raw.githubusercontent.com/ScottBrabo/CheckUser/master/install.sh)
     ;;
 4 | 04)
     {

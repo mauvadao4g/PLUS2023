@@ -32,13 +32,13 @@ case $x in
     bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/DTCheckUser/master/install.sh)
     ;;
 3 | 03)
-    curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/GLMod/main/install.sh > install.sh; chmod a+x install.sh; ./install.sh
+    bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/GLMod/main/install.sh)
     ;;
 4 | 04)
     {
-    curl -s -o install.sh -L https://raw.githubusercontent.com/PhoenixxZ2023/proxy/main/install.sh
+    bash <(curl -s -o install.sh -L https://raw.githubusercontent.com/PhoenixxZ2023/proxy/main/install.sh
     chmod +x install.sh
-     ./install.sh && mainproxy
+    ./install.sh && mainproxy
     echo ""
     echo "VELOCIDADE SUPREMA ATIVADA"
     }

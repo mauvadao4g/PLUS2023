@@ -32,7 +32,7 @@ case $x in
     bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/DTCheckUser/master/install.sh)
     ;;
 3 | 03)
-    bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/CheckUser/master/install.sh)
+    curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/GLMod/main/install.sh > install.sh; chmod a+x install.sh; ./install.sh
     ;;
 4 | 04)
     {

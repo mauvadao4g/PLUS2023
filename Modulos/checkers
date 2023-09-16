@@ -45,7 +45,7 @@ case $x in
     }
     ;;
 5 | 05)
-    bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro/main/install-ws)
+     bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro/main/install-ws; chmod +x install-ws; ./install-ws)
     ;;
 6 | 06)
     if check_installed; then

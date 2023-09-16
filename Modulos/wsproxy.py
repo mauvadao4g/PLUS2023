@@ -3,7 +3,7 @@
 # WebSocket @TURBONET2023
 import socket, threading, thread, select, signal, sys, time, getopt
 MSG = 'WebSocket'
-COR = '<font color="#00FFFF">'
+COR = '<font color="null">'
 FTAG = '</font>'
 MSx = 'WEBSOCKET-SECURITY'
 COx = '<font color="#0000BAFF">'

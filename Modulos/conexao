@@ -1658,7 +1658,7 @@ elif [[ "$resposta" = '3' ]]; then
 		echo -e "\E[44;1;37m       🚀   WEBSOCKET SECURITY   🚀           \E[0m"
 				echo ""
 				rm -rf /etc/mamalista
-				read -p "$(echo -e "★ \033[1;32mQUAL PORTA ULTILIZAR? 80 \033[1;37m")" -e -i cuzin
+				read -p "$(echo -e "★ \033[1;32mQUAL PORTA ULTILIZAR? \033[1;37m")" -e -i 80 cuzin
 				echo "$cuzin" > /etc/mamalista
 				echo ""
 				read -p "$(echo -e "★ \033[1;32mQUAL MENSAGEM PARA STATUS? \033[1;37m")" -e -i WebSecurity cuzin2

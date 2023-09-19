@@ -6,9 +6,6 @@ MSG = 'WebSocket'
 COR = '<font color="null">'
 FTAG = '</font>'
 MSx = 'WEBSOCKET-SECURITY'
-COx = '<font color="#0000BAFF">'
-FTAx = '</font>'
-
 PASS = ''
 LISTENING_ADDR = '0.0.0.0'
 try:

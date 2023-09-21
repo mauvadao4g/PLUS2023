@@ -45,7 +45,7 @@ case $x in
     }
     ;;
 5 | 05)
-   bash <(wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/CheckUserTURBO/main/bash.sh)
+   bash <(wget -qO- https://raw.githubusercontent.com/PhoenixxZ2023/CheckUserTURBO/main/bash.sh) && UlekCheckUser
     ;;
 6 | 06)
     if check_installed; then

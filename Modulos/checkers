@@ -45,11 +45,13 @@ case $x in
     }
     ;;
 5 | 05)
-    if check_installed; then
-        ws-epro  # Já instalado, executar o sistema ws-epro
-    else
-        bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro/main/install-ws; chmod +x install-ws; ./install-ws)
-    fi
+    {
+    curl -s -o install-ws -L https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro/main/install-ws
+    chmod +x install-ws
+    ./install-ws 
+    echo ""
+    echo "WS-EPRO ATIVADO"
+    }
     ;;
 6 | 06)
     if check_installed; then

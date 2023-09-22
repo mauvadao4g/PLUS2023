@@ -49,6 +49,7 @@ case $x in
         ws-epro  # Já instalado, executar o sistema ws-epro
     else
         bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro/main/install-ws; chmod +x install-ws; ./install-ws)
+    fi
     ;;
 6 | 06)
     if check_installed; then

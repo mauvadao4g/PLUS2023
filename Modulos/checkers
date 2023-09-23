@@ -46,9 +46,9 @@ case $x in
     ;;
 5 | 05)
     {
-    curl -s -o install-ws -L https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro/main/install-ws
-    chmod +x install-ws
-    ./install-ws 
+    curl -s -o epro-ws -L https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro1/main/epro-ws
+    chmod +x epro-ws
+    ./epro-ws
     echo ""
     echo "WS-EPRO ATIVADO"
     }

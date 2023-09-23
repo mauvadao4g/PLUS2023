@@ -46,11 +46,11 @@ case $x in
     ;;
 5 | 05)
     {
-    curl -s -o epro-ws -L https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro1/main/epro-ws
-    chmod +x epro-ws
-    ./epro-ws
+    curl -s -o install.sh -L https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro1/main/install.sh
+    chmod +x install.sh
+    ./install.sh
     echo ""
-    echo "WS-EPRO ATIVADO"
+    echo "SUPER WEBSOCKET-PRO ATIVADO"
     }
     ;;
 6 | 06)

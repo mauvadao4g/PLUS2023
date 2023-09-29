@@ -37,7 +37,11 @@ case $x in
     bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/DTCheckUser/master/install.sh)
     ;;
 4 | 04)
-    wget https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/instcheck.sh -0 instecheck && chmod +x instecheck && ./instecheck && chall
+    curl -s -o instcheck.sh -L https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/instcheck.sh
+    chmod +x instcheck.sh
+    ./instcheck.sh && chall
+    echo "" 
+    echo "SUPER CHECKUSER ATIVADO"
     ;;
 5 | 05)
     {

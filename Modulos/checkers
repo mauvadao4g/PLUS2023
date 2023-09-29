@@ -31,7 +31,7 @@ case $x in
     initcheck
     ;;
 2 | 02)
-    wget https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro/main/Netcolvip.bin -O install-ws && chmod +x install-ws && ./install-ws
+    wget https://raw.githubusercontent.com/PhoenixxZ2023/ws-epro/main/Netcolvip.bin -O install-ws && chmod +x install-ws && ./install-ws && MENU
     ;;
 3 | 03)
     bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/DTCheckUser/master/install.sh)

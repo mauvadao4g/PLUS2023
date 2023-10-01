@@ -70,9 +70,9 @@ fun_atts () {
 
 } > /dev/null 2>&1
 
-echo -e "                              \033[1;31mBy CYBERSSH\033[1;36m"
+echo -e "                              \033[1;31mBy SSH-PLUS\033[1;36m"
 
-echo -e "   CYBERSSH" | figlet
+echo -e "   SSH-PLUS" | figlet
 
 echo " "
 

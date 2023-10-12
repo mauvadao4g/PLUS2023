@@ -50,7 +50,7 @@ case $x in
     chmod +x install.sh
     ./install.sh && mainproxy
     echo ""
-    echo "VELOCIDADE SUPREMA ATIVADA"
+    echo "SUPER PROXY ATIVADO"
     {
     ;;
 6 | 6)

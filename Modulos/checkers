@@ -51,7 +51,7 @@ case $x in
     ./install.sh && mainproxy
     echo ""
     echo "SUPER PROXY ATIVADO"
-    {
+    }
     ;;
 6 | 6)
     if check_installed; then

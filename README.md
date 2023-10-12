@@ -54,7 +54,8 @@ apt update -y && apt upgrade -y && wget -y; bash <(wget -qO- raw.githubuserconte
 
 # ########################################################################################################################
 
-# BOT WHATSAPP DE VENDAS SSH ![image](https://github.com/PhoenixxZ2023/PLUS/assets/101994539/11834ad2-6a31-48b2-9dda-51cce731c9e6)
+# BOT WHATSAPP DE VENDAS SSH ![image](https://github.com/PhoenixxZ2023/PLUS/assets/101994539/18f9664c-458e-4a0f-a27b-96e64587cba0)
+
 
 
 # Testado nos ubuntus 18 e 20

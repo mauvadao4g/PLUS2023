@@ -45,9 +45,9 @@ case $x in
     ;;
 5 | 5)
     if check_installed; then
-        chall  # Já instalado, executar o sistema chall
+        chall  # Já instalado, executar o sistema chall.sh
     else
-        bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/instcheck.sh) && chall
+        bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/instcheck.sh) && chall && chall.sh
     fi
     ;;
 0 | 00)

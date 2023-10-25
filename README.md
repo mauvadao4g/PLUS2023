@@ -3,29 +3,29 @@
 
 # TELEGRAM @TURBONE2023
 
-🎮✅ NOVO PROXY DTUNNEL V2 MOD 🎮✅
+✅ NOVO PROXY DTUNNEL V2 MOD
 
-🎮✅ WEBSOCKET SECURITY 🎮✅
+✅ WEBSOCKET SECURITY
 
-🎮✅ V2RAY FUNCIONANDO 🎮✅
+✅ V2RAY FUNCIONANDO
 
-🎮✅ CHECKUSER CONECTA4G 🎮✅
+✅ CHECKUSER CONECTA4G 
 
-🎮✅ CHECKUSER GL TUNNEL MOD 🎮✅
+✅ CHECKUSER GL TUNNEL MOD 
 
-🎮✅ CHECKUSER ANYVPN MOD 🎮✅
+✅ CHECKUSER ANYVPN MOD
 
-🎮✅ BADVPN PRO 🎮✅
+✅ BADVPN PRO 
 
-🎮✅ MENU APACHE 🎮✅
+✅ MENU APACHE 
 
-🎮✅ MOSTRADOR DE CONSUMO 🎮✅
+✅ MOSTRADOR DE CONSUMO 
 
-🎮✅ TCPTWEAKER 🎮✅
+✅ TCPTWEAKER 
 
-🎮✅ MEMÓRIA SWAP 🎮✅
+✅ MEMÓRIA SWAP 
 
-🎮✅ FIREWALL ORACLE 🎮✅
+✅ FIREWALL ORACLE
 
 ## :heavy_exclamation_mark: Requisitos
 * Um sistema operacional baseado em Linux (Ubuntu ou Debian)

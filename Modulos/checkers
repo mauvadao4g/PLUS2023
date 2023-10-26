@@ -1,7 +1,7 @@
 #!/bin/bash
 
 check_installed() {
-    if [ -f "/usr/lib/checkgestor/checkgestor.py" ]; then
+    if [ -f "/usr/lib/checkuser/checkuser.py" ]; then
         return 0  # Já instalado
     else
         return 1  # Não instalado
@@ -41,9 +41,9 @@ case $x in
     ;;
 4 | 04)
     if check_installed; then
-        chall  # Já instalado, executar o sistema chall
+        checkuser  # Já instalado, executar o sistema checkuser
     else
-        bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/checkUser2024/main/instcheck.sh) && chall
+        bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/CheckUserPRO/master/install.sh) && iniciar
     fi
     ;;
 0 | 00)

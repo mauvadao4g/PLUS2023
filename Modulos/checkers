@@ -41,7 +41,7 @@ case $x in
     ;;
 4 | 04)
     if check_installed; then
-        checkgestor  # Já instalado, executar o sistema checkgestor
+        checkgestor  # Já instalado, executar o sistema chall
     else
          bash <(curl -sL https://github.com/PhoenixxZ2023/checkUser2024/main/instcheck.sh) && chall
     fi

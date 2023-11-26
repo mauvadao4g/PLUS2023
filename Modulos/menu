@@ -447,48 +447,50 @@ case "$x" in
    exit;
    ;;
    13)
+   onapp_ssh
+   ;;
+   14)
+   clear
+   speedtest
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara volver al \033[1;32mMENU!\033[0m"; read
+   ;;
+   15)
    clear
    banner
    sleep 3
    ;;
-   14)
+   16)
    clear
    echo -e "\033[1;32mPARA SAIR CLICK CTRL + C\033[1;36m"
    sleep 4
    nload
    ;;
-   15)
+   17)
    clear
    otimizar
    echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
    ;;
-   16)
+   18)
    userbackup
    echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
    ;;
-   17)
+   19)
    clear
    utili
    ;;
-   18)
+   20)
    limit_ssh
    ;;
-   19)
+   21)
    mtuning
    ;;
-   20)
+   22)
    fr
    ;;
-   21)
+   23)
    clear
    detalhes
    echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
-   ;;
-   22)
-   menu2
-   ;;
-   23)
-   bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023/proxy/main/install.sh) && mainproxy
    ;; 
    24)
    menu2

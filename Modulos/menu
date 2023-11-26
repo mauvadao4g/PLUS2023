@@ -447,7 +447,7 @@ case "$x" in
    exit;
    ;;
    13)
-   onapp_ssh
+   onlineapp
    ;;
    14)
    clear

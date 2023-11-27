@@ -442,9 +442,7 @@ case "$x" in
    swapmemory
    ;;
    12)
-   clear
    menub2
-   exit;
    ;;
    13)
    onapp_ssh

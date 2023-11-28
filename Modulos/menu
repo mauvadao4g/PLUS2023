@@ -445,7 +445,7 @@ case "$x" in
    menub2
    ;;
    13)
-   onapp_ssh
+   onlineapp
    ;;
    14)
    clear

@@ -20,7 +20,7 @@ fun_ip() {
 [[ ! -d /etc/newadm/wireguard ]] && mkdir /etc/newadm/wireguard
 # Detect Debian users running the script with "sh" instead of bash
 if readlink /proc/$$/exe | grep -q "dash"; then
-    echo 'Este instalador debe ejecutarse con "bash", no con "sh".'
+    echo 'Este instalador deve ser executado com "bash", não com "sh".'
     exit
 fi
 
@@ -29,7 +29,7 @@ read -N 999999 -t 0.001
 
 # Detect OpenVZ 6
 if [[ $(uname -r | cut -d "." -f 1) -eq 2 ]]; then
-    echo "El sistema está ejecutando un kernel antiguo, que es incompatible con este instalador"
+    echo "O sistema está executando um kernel antigo, que é incompatível com este instalador"
     exit
 fi
 
@@ -48,17 +48,17 @@ elif [[ -e /etc/fedora-release ]]; then
     os="fedora"
     os_version=$(grep -oE '[0-9]+' /etc/fedora-release | head -1)
 else
-    echo "Este instalador parece estar ejecutándose en una distribución no compatible. Las distribuciones compatibles son Ubuntu, Debian, CentOS y Fedora"
+    echo "Este instalador parece estar sendo executado em uma distribuição não suportada. Distribuições compatíveis são Ubuntu, Debian, CentOS e Fedora"
     exit
 fi
 
 if [[ "$os" == "ubuntu" && "$os_version" -lt 1804 ]]; then
-    echo "Se requiere Ubuntu 18.04 o superior para usar este instalador. Esta versión de Ubuntu es demasiado antigua y no es compatible"
+    echo "Ubuntu 18.04 ou superior é necessário para usar este instalador. Esta versão do Ubuntu é muito antiga e não é compatível"
     exit
 fi
 
 if [[ "$os" == "debian" && "$os_version" -lt 9 ]]; then
-    echo "Se requiere Debian 9+ o superior para usar este instalador. Esta versión de Debian es demasiado antigua y no tiene soporte"
+    echo "É necessário Debian 9+ ou superior para usar este instalador. Esta versão do Debian é muito antiga e não é suportada"
     exit
 fi
 
@@ -641,20 +641,20 @@ menufun() {
     pres_adm
     echo -e "\e[1;33m        WIREGUARD _ MENU ADMINISTRADOR              \e[0m"
     msg -bar
-    echo -e "\e[1;32m (1) \e[92mAGREGAR NUEVO USUARIO"
+    echo -e "\e[1;32m (1) \e[92mADICIONAR NOVO USUÁRIO"
     echo -e "\e[1;32m (2) \e[97m\e[41mELIMINAR USUARIO\e[0m"
-    echo -e "\e[1;32m (3) \e[93mDESCARGAR CONFIGURACION"
-    echo -e "\e[1;32m (4) \e[92mINFORMACION DE LA CUENTA"
+    echo -e "\e[1;32m (3) \e[93mBAIXAR CONFIGURAÇÃO"
+    echo -e "\e[1;32m (4) \e[92mINFORMACÕES DA CONTA"
     echo -e "\e[1;33m ▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎\e[0m"
     echo -e "\e[1;32m (5) \e[1;32mINICIAR \e[97m|| \e[1;31mDETENER \e[0m"
     echo -e "\e[1;32m (6) \e[97mREINICIAR PROTOCOLO \e[0m"
     echo -e "\e[1;33m ▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎\e[0m"
     echo -e "\e[1;32m (7) \e[97m\e[1;41mDESINSTALAR WIREGUARD\e[0m"
-    echo -e "\e[1;32m (0) \e[91mSALIR"
+    echo -e "\e[1;32m (0) \e[91mSAIR"
     msg -bar
-    read -p "$(echo -e "\e[1;97m SELECIONE UNA OPCION:") " option
+    read -p "$(echo -e "\e[1;97m SELECIONE UMA OPÇÃO:") " option
     until [[ "$option" =~ ^[0-7]$ ]]; do
-        echo "$option: OPCION INVALIDA."
+        echo "$option: OPCÃO INVALIDA."
         read -p "Selecione Una Opcion: " option
     done
     echo -e -n "${nocolor}"
@@ -961,13 +961,13 @@ if [[ ! -e /etc/wireguard/wg0.conf ]]; then
     tput clear
     pres_adm
     echo
-    echo -e '    \e[1;93m  INSTALADOR WIREGUARD [ADMATRIX-PRO]  \e[0m'
+    echo -e '    \e[1;93m  INSTALADOR WIREGUARD PRO  \e[0m'
     echo -e '               \e[3;92m《 By: Razhiel 》\e[0m'
     msg -bar
     echo -e "\e[1;32m (1) \e[97mINSTALAR WIREGUARD\e[0m"
-    echo -e "\e[1;32m (2) \e[97mSALIR\e[0m"
+    echo -e "\e[1;32m (2) \e[97mSAIR\e[0m"
     msg -bar
-    read -p "$(echo -e "\e[1;97m SELECIONE UNA OPCION:") " option
+    read -p "$(echo -e "\e[1;97m SELECIONE UMA OPÇÃO:") " option
     case $option in
     1) install ;;
     0) exit ;;

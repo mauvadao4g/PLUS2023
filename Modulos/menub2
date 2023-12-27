@@ -5,7 +5,7 @@
     echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 01 •\033[1;34m]\033[1;37m ➩  \033[1;33mINSTALAR UDP-CUSTOM \033[0m"
     echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 02 •\033[1;34m]\033[1;37m ➩  \033[1;33mABRIR MENU UDP-CUSTOM \033[0m"
     echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 03 •\033[1;34m]\033[1;37m ➩  \033[1;33mINSTALAR WIREGUARD VPN\033[0m"
-    echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 04 •\033[1;34m]\033[1;37m ➩  \033[1;33mINSTALAR SSL PRO\033[0m"
+    echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 04 •\033[1;34m]\033[1;37m ➩  \033[1;33mINSTALAR SSL TUNNEL PRO\033[0m"
     echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 05 •\033[1;34m]\033[1;37m ➩  \033[1;33mINSTALAR WS-EPRO\033[0m"
     echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 06 •\033[1;34m]\033[1;37m ➩  \033[1;33mINSTALAR PROXY-GOLANG \033[0m"
     echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 07 •\033[1;34m]\033[1;37m ➩  \033[1;33mINSTALAR HYSTERIA-PRO \033[0m"
@@ -35,7 +35,7 @@
                         bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023//ws-epro/main/Netcolvip.bin)
                         ;;
 			6 | 06)
-                        bash <(wget -qO- raw.githubusercontent.com/PhoenixxZ2023/Proxy-Golang/main/script.sh)
+                        Golang.sh
                         ;;
                         7 | 07)
                         bash <(curl -fsSL https://raw.githubusercontent.com/deathline94/Hysteria2-Installer/main/hysteria.sh) 

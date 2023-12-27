@@ -35,7 +35,7 @@
                         bash <(curl -sL https://raw.githubusercontent.com/PhoenixxZ2023//ws-epro/main/Netcolvip.bin)
                         ;;
 			6 | 06)
-                        Golang.sh
+                        GoLang.sh
                         ;;
                         7 | 07)
                         bash <(curl -fsSL https://raw.githubusercontent.com/deathline94/Hysteria2-Installer/main/hysteria.sh) 

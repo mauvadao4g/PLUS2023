@@ -10,7 +10,7 @@ killall go 1> /dev/null 2> /dev/null
 #funtion
 goinst () {
 tput clear
-pres_adm
+echo
 echo -e "\e[1;33m   INSTALADOR GO Lang (Multi Protocolo) \e[0m"
 echo
 echo -e "\e[1;31m A continuacion se instalara el paquete GO Lang\n Que es Base de Varios Protocolos...\e[0m"
@@ -35,28 +35,27 @@ rm go1.15.linux-amd64.tar.gz
 source /root/.bashrc
 fi
 sleep 3
-echo -e "\e[1;32m Reiniciando Fuente de Terminal...\e[0m"
+echo -e "\e[1;32m Reiniciando Fonte do Terminal...\e[0m"
 fi
-echo -e "\033[1;33m Para finalizar el proceso de Instalacion de GO escribe :\033[0m"
+echo -e "\033[1;33m Para finalizar o processo de Instalacion de GO escribe :\033[0m"
 echo -e "\033[1;32m source ~/.profile\033[0m"
 }
 
 gomenu () {
 tput clear
-pres_adm
-echo -e "\e[1;33m     PACK GO Lang INSTALLER | \e[1;32m[ADMATRIX-PRO] \e[0m"
-msg -bar
-echo -e "\e[1;32m  [2] \e[1;97m INSTALAR PACK GO Lang \e[0m"
-echo -e "\e[1;32m  [2] \e[1;97m DESINSTALAR GO Lang \e[0m"
+echo -e "\e[1;33m     PACK GO Lang INSTALLER | \e[1;33 \e[0m"
+echo -e
+echo -e "\e[1;32m  [1] \e[1;33mINSTALAR PACK GO Lang \e[0m"
+echo -e "\e[1;32m  [2] \e[1;33mDESINSTALAR GO Lang \e[0m"
 echo -e "\e[1;33m ▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎\e[0m"
-echo -e "\e[1;32m  [0] \e[1;31m SALIR \e[0m"
-msg -bar
-read -p "ELIGE UNA OPCION: " opcion
+echo -e "\e[1;32m  [0] \e[1;31m SAIR \e[0m"
+echo -e
+read -p "ESCOLHA UMA OPÇÃO: " opcion
 case $opcion in
 0)exit;;
 1)goinst;;
 2)removego;;
-*)echo -e "\e[1;31m\n ESCOGE UNA OPCION VALIDA...!!!\e[0m"
+*)echo -e "\e[1;31m\n ESCOLHA UMA OPÇÃO VALIDA...!!!\e[0m"
 sleep 1
 gomenu;;
 esac

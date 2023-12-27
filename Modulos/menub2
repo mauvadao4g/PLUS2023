@@ -38,7 +38,7 @@
                         bash <(wget -qO- raw.githubusercontent.com/PhoenixxZ2023/Proxy-Golang/main/script.sh)
                         ;;
                         7 | 07)
-                        wget -N --no-check-certificate https://raw.githubusercontent.com/evozi/hysteria-install/main/hy2/hysteria2.sh && bash hysteria2.sh
+                        bash <(curl -fsSL https://raw.githubusercontent.com/deathline94/Hysteria2-Installer/main/hysteria.sh) 
                         ;;
 			0 | 00)
 			clear

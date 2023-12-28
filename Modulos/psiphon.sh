@@ -6,23 +6,22 @@ tput clear
 
 ### MENU
 psimen () {
-tput clear
-pres_adm
-echo -e "\e[1;32m           PSIPHON INSTALLER \e[0m"
+tput clear  
+echo
+echo -e "\033[1;32m         MENU  PSIPHON       \033[0m"
 msg -bar
-echo -e "\e[1;32m [1]\e[1;97m ACTIVAR PSIPHON\e[0m"
-echo -e "\e[1;32m [2]\e[1;97m VER Server.Dat PSIPHON\e[0m"
-echo -e "\e[1;32m [3]\e[1;97m EDITAR Server.Json PSIPHON\e[0m"
-echo -e "\e[1;32m [4]\e[1;97m DESACTIVAR PSIPHON\e[0m"
+echo -e "\033[1;32m [1] \033[1;33mATIVAR PSIPHON \033[0m"
+echo -e "\033[1;32m [2] \033[1;33mVER Server.Dat PSIPHON \033[0m"
+echo -e "\033[1;32m [3] \033[1;33mEDITAR Server.Json PSIPHON \033[0m"
+echo -e "\033[1;32m [4] \033[1;33mDESACTIVAR PSIPHON \033[0m"
 msg -bar
-echo -e "\e[1;32m [0]\e[1;31m SALIR DEL PROTOCOLO\e[0m"
+echo -e "\033[1;32m [0] \033[1;31m SAIR DOS PROTOCOLOS \033[0m"
 msg -bar
-read -p " SELECCIONA UNA OPCION : " opci
+read -p " SELECIONE UMA OPÇÃO : " opci
 case $opci in
 
 1)
 tput clear
-pres_adm
 echo
 rm -rf /root/psi
 kill $(ps aux | grep 'psiphond' | awk '{print $2}') 1> /dev/null 2> /dev/null
@@ -70,10 +69,9 @@ msg -bar
 msg -ne "Enter Para Continuar" && read enter
 psimen
 ;;
-
 2)
 tput clear
-pres_adm
+echo
 psi=`cat /root/psi.txt`;
 echo
 echo -e "\033[1;33m  LA CONFIGURACION DE TU SERVIDOR ES:\033[0m"
@@ -98,7 +96,6 @@ psimen
 
 3)
 tput clear
-pres_adm
 echo
 echo -e "\e[1;97m Al finalizar presione (CTRL + X + Y + Enter) \e[0m"
 sleep 0.5
@@ -111,7 +108,6 @@ psimen
 
 4)
 tput clear
-pres_adm
 echo
 echo -e "\033[1;97m  DESACTIVANDO SERVIDOR PSIPHON EN EL SISTEMA...\033[0m"
 sleep 0.3

@@ -31,17 +31,17 @@ drop_port() {
 
 menu_sld () {
 tput clear
-pres_adm
-echo -e "\e[1;33m      SLOWDNS MANAGER | \e[1;32m  \e[0m"
+echo -e
+echo -e "\e[1;33m      MENU SLOWDNS      \033[1;33m  \033[0m"
 msg -bar
 [[ $(ps x | grep -w dns-server | grep -v grep) ]] && serslow="PARAR SERVICIO${lor2}[◉] " || serslow="INICIAR SERVIÇO ${lor1}[◉] "
-echo -e "\e[1;32m  [1] \e[97m INSTALAR SLOWDNS \e[0m"
-echo -e "\e[1;32m  [2] \e[97m REINICIAR SLOWDNS \e[0m"
-echo -e "\e[1;32m  [3] \e[97m DESINTALAR SLOWDNS \e[0m"
-echo -e "\e[1;32m  [4] \e[97m BASE DE DADOS \e[0m"
-echo -e "\e[1;32m  [5] \e[97m $serslow \e[0m"
+echo -e "\e[1;32m  [1] \033[1;33mINSTALAR SLOWDNS \033[0m"
+echo -e "\e[1;32m  [2] \033[1;33mREINICIAR SLOWDNS \033[0m"
+echo -e "\e[1;32m  [3] \033[1;33mDESINTALAR SLOWDNS \033[0m"
+echo -e "\e[1;32m  [4] \033[1;33mBASE DE DADOS \033[0m"
+echo -e "\e[1;32m  [5] \033[1;33m$serslow \033[0m"
 echo -e "\e[1;33m ▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎\e[0m"
-echo -e "\e[1;32m  [0] \e[1;31m SAIR DO MENU \e[0m"
+echo -e "\e[1;32m  [0] \033[1;31m SAIR DO MENU \033[0m"
 msg -bar
 read -p " ESCOLHA UMA OPÇÃO: " opci
 case $opci in
@@ -50,18 +50,17 @@ case $opci in
 1)
 if [ -d /etc/newadm/dns ]; then
 tput clear
-pres_adm
 echo
 echo -e "${lor1}      SLOWDNS JÁ ESTA INSTALADO ${lor7}"
 sleep 3
 else
 tput clear
-pres_adm 
+echo
 echo;echo -ne "\n${col7} >>> Ingresa Un Dominio Para Conexion NS: "
 read ns
 if [[ -z "$ns" ]]; then
 tput clear
-pres_adm
+echo
 echo;echo -e "${lor1}        DOMINIO INCORRETO ${lor7}"
 else
 echo
@@ -112,7 +111,7 @@ DEBIAN_FRONTEND=noninteractive apt install -y iptables-persistent
 cat /dev/null >~/.bash_history && history -c
 }
 tput clear
-pres_adm
+echo
 echo;echo -e "${lor3}                INSTALANDO SLOWDNS ${lor7}"
 echo
 fun_bar 'configdns'
@@ -126,7 +125,6 @@ echo;echo
 msg -ama "                 REGISTRO SLOWDNS CRIADO COM SUCESSO.... "
 sleep 3
 tput clear
-pres_adm
 echo
 echo "${ns}" > /etc/newadm/dns/ns
 echo -e "${lor6} DOMINIO NS${lor7}  :${ns} ${lor7}"
@@ -142,7 +140,6 @@ menu_sld
 #opcion 2
 2)
     tput clear 
-    pres_adm
     echo
     msg -ama "                REINICIANDO SLOWDNS...."
     screen -S slow_dns -p 0 -X quit
@@ -159,7 +156,6 @@ menu_sld
 #opcion 3
 3)
 tput clear
-pres_adm
 echo
 if [ -d /etc/newadm/dns/ ];then
 rm -rf /etc/newadm/dns/
@@ -180,7 +176,7 @@ menu_sld
 #opcion 4
 4)
 tput clear
-pres_adm
+echo
 if [ -f /etc/newadm/dns/ns ];then
 keypub=$(cat /etc/newadm/dns/server.pub)
 ns=$(cat /etc/newadm/dns/ns)
@@ -205,7 +201,6 @@ menu_sld
 #opcion 5
 5)
 tput clear
-pres_adm
 echo
 if [ -d /etc/newadm/dns ];then
 if ps x | grep -w dns-server | grep -v grep 1>/dev/null 2>/dev/null; then 

@@ -43,12 +43,12 @@ echo -e "\033[1;32m source ~/.profile\033[0m"
 
 gomenu () {
 tput clear
-echo -e "\e[1;33m     PACK GO Lang INSTALLER | \e[1;33 \e[0m"
+echo -e "\033[1;33m     PACK GO Lang INSTALLER | \e[1;33 \e[0m"
 echo -e
-echo -e "\e[1;32m  [1] \e[1;33mINSTALAR PACK GO Lang \e[0m"
-echo -e "\e[1;32m  [2] \e[1;33mDESINSTALAR GO Lang \e[0m"
-echo -e "\e[1;33m ▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎\e[0m"
-echo -e "\e[1;32m  [0] \e[1;31m SAIR \e[0m"
+echo -e "\033[1;32m  [1] \e[1;33mINSTALAR PACK GO Lang \033[0m"
+echo -e "\033[1;32m  [2] \e[1;33mDESINSTALAR GO Lang \033[0m"
+echo -e "\033[1;33m ▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎\e\033[0m"
+echo -e "\033[1;32m  [0] \e[1;31m SAIR \033[0m"
 echo -e
 read -p "ESCOLHA UMA OPÇÃO: " opcion
 case $opcion in

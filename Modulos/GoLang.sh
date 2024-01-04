@@ -12,20 +12,20 @@ goinst () {
 tput clear
 echo -e "\033[1;33m   INSTALADOR GO Lang (Multi Protocolo) \033[0m"
 echo
-echo -e "\033[1;31m A continuacion se instalara el paquete GO Lang\n Que es Base de Varios Protocolos... \033[0m"
+echo -e "\033[1;33m A continuacion se instalara el paquete GO Lang\n Que es Base de Varios Protocolos... \033[0m"
 echo -e "\033[1;33m Continuar? \033[0m"
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
 read -p " [S/N]: " yesno
 tput cuu1 && tput dl1
 done
 if [[ ${yesno} = @(s|S|y|Y) ]]; then
-echo -e "\e[1;32m Instalando...\e[0m"
+echo -e "\033[1;32m Instalando...\033[0m"
 cd
 rm -rf /usr/local/go 1> /dev/null 2> /dev/null
 wget https://golang.org/dl/go1.15.linux-amd64.tar.gz 1> /dev/null 2> /dev/null
 tar -C /usr/local -xzf go1.15.linux-amd64.tar.gz
 if cat /root/.bashrc | grep GOROOT; then
-echo -e "\e[1;31m Ja Existe um GoROOT - Skipping\e[0m"
+echo -e "\033[1;31m Ja Existe um GoROOT - Skipping\033[0m"
 else
 sed -i '$a export GOROOT=/usr/local/go' /root/.bashrc
 sed -i '$a export GOPATH=$HOME/go' /root/.bashrc
@@ -47,7 +47,7 @@ echo -e
 echo -e "\033[1;32m  [1] \033[1;33mINSTALAR PACK GO Lang \033[0m"
 echo -e "\033[1;32m  [2] \033[1;33mDESINSTALAR GO Lang \033[0m"
 echo -e "\033[1;33m ▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎ \033[0m"
-echo -e "\033[1;32m  [0] \033[1;31m SAIR \033[0m"
+echo -e "\033[1;32m  [0] \033[1;33m SAIR \033[0m"
 echo -e
 read -p "ESCOLHA UMA OPÇÃO: " opcion
 case $opcion in

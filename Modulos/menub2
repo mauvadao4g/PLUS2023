@@ -46,7 +46,7 @@
                         slowdns.sh
                         ;;
                         9 | 09)
-                        bash <(curl -fsSL https://raw.githubusercontent.com/deathline94/Hysteria2-Installer/main/hysteria.sh) 
+                        bash <(curl -Ls https://raw.githubusercontent.com/missuo/Hysteria2/main/hy2.sh)
                         ;;
 			0 | 00)
 			clear

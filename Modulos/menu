@@ -545,7 +545,7 @@ case "$x" in
    exit;
    ;;
    V | v)
-   source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh
+   bash <(curl -Ls https://raw.githubusercontent.com/X-UI-Unofficial/release/main/install.sh) 221120_v5
    ;;
    *)
    echo -e "\n\033[1;31mOpcao invalida !\033[0m"
